@@ -17,6 +17,18 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins -->
   <link rel="stylesheet" href="assets/css/skins/_all-skins.min.css">
   
+  <script src="phonegap.js"></script> 
+  <script type="text/javascript" charset="utf-8">
+      function onLoad()
+      {
+            document.addEventListener("deviceready", onDeviceReady, true);
+      }
+
+      function exitFromApp()
+       {
+          navigator.app.exitApp();
+       }
+  </script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
   <header class="main-header">
@@ -45,7 +57,7 @@
         <li class="active"><a href="https://www.google.co.id"><i class="fa fa-circle-o text-aqua"></i> <span>Menu Utama</span></a></li>
         <li class="active"><a href="https://beta.nemuide.com/"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
         <!-- <li class="active"><a href="#" onclick="close_window();return false;"><i class="fa fa-remove"></i> <span>Keluar</span></a></li> -->
-        <li class="active"><a href="#" onclick="self.close()"><i class="fa fa-remove"></i> <span>Keluar</span></a></li>
+        <li class="active"><a href="#" onclick="exitFromApp()"><i class="fa fa-remove"></i> <span>Keluar</span></a></li>
 
       </ul>
     </section>
