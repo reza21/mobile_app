@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins -->
+  <link rel="stylesheet" href="assets/css/skins/_all-skins.min.css">
+  
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+  <header class="main-header">
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <!-- <a href="#" >Rumus-Rumus</a> -->
+            <span class="logo logo-mini"><b>Admin</b>LTE</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="active"><a href="https://www.google.co.id"><i class="fa fa-circle-o text-aqua"></i> <span>Menu Utama</span></a></li>
+        <li class="active"><a href="https://beta.nemuide.com/"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
+        <!-- <li class="active"><a href="#" onclick="close_window();return false;"><i class="fa fa-remove"></i> <span>Keluar</span></a></li> -->
+        <li class="active"><a href="#" onclick="self.close()"><i class="fa fa-remove"></i> <span>Keluar</span></a></li>
+
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/js/app.min.js"></script>
+<script type="text/javascript">
+  function close_window() {
+    if (confirm("Close Window?")) {
+      close();
+    }
+  }
+</script>
+
+</body>
+</html>
