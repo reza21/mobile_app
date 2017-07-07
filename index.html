@@ -54,9 +54,9 @@
     <section class="sidebar">
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="active"><a href="#" onclick="open_google_in()"><i class="fa fa-circle-o text-aqua"></i> <span>Google In</span></a></li>
         <li class="active"><a href="#" onclick="open_google_out()"><i class="fa fa-circle-o text-aqua"></i> <span>Google Out</span></a></li>
-        <li class="active"><a href="#" onclick="open_nemuide()"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
+        <li class="active"><a href="https://beta.nemuide.com" ><i class="fa fa-circle-o text-aqua"></i> <span>Nemuide APP Web View</span></a></li>
+        <li class="active"><a href="#" onclick="open_nemuide()"><i class="fa fa-circle-o"></i> <span>Nemuide Browser in View</span></a></li>
         <!-- <li class="active"><a href="#" onclick="close_window();return false;"><i class="fa fa-remove"></i> <span>Keluar</span></a></li> -->
         <li class="active"><a href="#" onclick="exitFromApp()"><i class="fa fa-remove"></i> <span>Keluar</span></a></li>
 
@@ -74,10 +74,6 @@
     if (confirm("Close Window?")) {
       close();
     }
-  }
-
-  function open_google_in(){
-    navigator.app.loadUrl('https://google.com/', { openExternal:true });
   }
 
   function open_google_out(){
