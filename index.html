@@ -54,8 +54,8 @@
     <section class="sidebar">
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="active"><a href="https://www.google.co.id"><i class="fa fa-circle-o text-aqua"></i> <span>Menu Utama</span></a></li>
-        <li class="active"><a href="https://beta.nemuide.com/"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
+        <li class="active"><a href="#" onclick="open_google()"><i class="fa fa-circle-o text-aqua"></i> <span>Menu Utama</span></a></li>
+        <li class="active"><a href="#" onclick="open_nemuide()"><i class="fa fa-circle-o"></i> <span>Information</span></a></li>
         <!-- <li class="active"><a href="#" onclick="close_window();return false;"><i class="fa fa-remove"></i> <span>Keluar</span></a></li> -->
         <li class="active"><a href="#" onclick="exitFromApp()"><i class="fa fa-remove"></i> <span>Keluar</span></a></li>
 
@@ -74,6 +74,16 @@
       close();
     }
   }
+
+  function open_google(){
+    window.open('https://google.com', '_self ', 'location=yes');
+  }
+
+  function open_nemuide(){
+    window.open('https://beta.nemuide.com', '_self ', 'location=yes');
+  }
+
+
 </script>
 
 </body>
